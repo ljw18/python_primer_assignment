@@ -12,16 +12,16 @@ leanne = {
 fav_colour = input ('What is my favourite colour? ')
 
 if fav_colour.lower() == leanne['favourite colour']:
-    print (f'\033[0;34mThat is CORRECT! My favourite colour is {leanne['favourite colour']}.\033[0m\n')
+    print (f'\033[0;34mThat is CORRECT! My favourite colour is {leanne["favourite colour"]}.\033[0m\n')
 else:
-    print(f'That is incorrect. My favourite colour is {leanne['favourite colour']}.\n')     
+    print(f'That is incorrect. My favourite colour is {leanne["favourite colour"]}.\n')     
 
   
 fav_holiday_dest = input ('What is my favourite holiday destination? ')
 if fav_holiday_dest.title() == leanne['favourite holiday destination']:
-    print (f'\033[0;34mThat is CORRECT! My favourite holiday destination is {leanne['favourite holiday destination']}.\033[0m\n')
+    print (f'\033[0;34mThat is CORRECT! My favourite holiday destination is {leanne["favourite holiday destination"]}.\033[0m\n')
 else:
-    print(f'That is incorrect. My favourite holiday destination is {leanne['favourite holiday destination']}.\n')     
+    print(f'That is incorrect. My favourite holiday destination is {leanne["favourite holiday destination"]}.\n')     
 
 
 fav_food = input ('What is my favourite food? ')
@@ -30,17 +30,17 @@ fav_food = input ('What is my favourite food? ')
 leanne['favourite food'] = 'lasagne'  
 
 if fav_food.lower() == leanne['favourite food']:
-    print (f'\033[0;34mThat is CORRECT! My favourite food is {leanne['favourite food']}.\033[0m\n')
+    print (f'\033[0;34mThat is CORRECT! My favourite food is {leanne["favourite food"]}.\033[0m\n')
 else:
-    print(f'That is incorrect. My favourite food is {leanne['favourite food']}.\n')     
+    print(f'That is incorrect. My favourite food is {leanne["favourite food"]}.\n')     
 
 # add shoe size
 leanne['shoe size']='9'
 shoe_size = input ('What is my shoe size? ')
 if shoe_size == leanne['shoe size']:
-    print (f'\033[0;34mThat is CORRECT! My shoe size is {leanne['shoe size']}.\033[0m\n')
+    print (f'\033[0;34mThat is CORRECT! My shoe size is {leanne["shoe size"]}.\033[0m\n')
 else:
-    print(f'That is incorrect. My shoe size is {leanne['shoe size']}.\n')  
+    print(f'That is incorrect. My shoe size is {leanne["shoe size"]}.\n')  
 
 # remove fav season 
 leanne.pop('favourite season')
