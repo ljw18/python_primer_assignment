@@ -7,19 +7,23 @@ class SmartDevice:
         self.app_list = app_list
 
     def report(self):
-        print("This is " + str(self.model_number) + " from " + self.brand,"\n")
+        print("This is device " + str(self.model_number) + " made by " + self.brand,"\n")
 
     def install_app(self, app_name='Settings'):
-        print(f"Installing {app_name}...\n")
         if app_name not in self.app_list:
+            print(f"Installing {app_name}...")
             self.app_list.append(app_name)
-        return self.app_list
-    
+            print (f"Device {self.brand} {self.model_number} has the following applications installed {self.app_list}\n")
+        else:
+            print(f"Device {self.brand} {self.model_number} already has {app_name} installed\n")
+            
+            
+        
     def delete_app(self, app_name):
         if app_name in self.app_list:
             self.app_list.remove(app_name)
-            print(f"Deleting {app_name}...\n")
-        return self.app_list
+            print(f"Deleting {app_name}...")
+            print (f"Device {self.brand} {self.model_number} has the following applications installed {self.app_list}\n")
     
  
 
@@ -31,10 +35,10 @@ device_a.install_app()
 device_a.install_app()
 device_a.install_app("Pacman")
 device_a.install_app("Galaga")
-print(device_a.app_list,"\n")
 
-device_a.delete_app("Galaga")
-print(device_a.app_list,"\n")
+
+device_a.delete_app("Pacman")
+
 
 
 
